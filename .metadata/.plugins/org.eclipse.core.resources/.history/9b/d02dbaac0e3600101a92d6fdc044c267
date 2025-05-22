@@ -1,0 +1,53 @@
+package com.nt.service;
+
+import java.util.List;
+
+import com.nt.model.Asset;
+import com.nt.model.Coin;
+import com.nt.model.User;
+
+public class AssetServiceImpl implements AssetService {
+
+	@Override
+	public Asset createAseet(User user, Coin coin, double quantity) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Asset getAssetById(Long assetId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Asset getAseetByUserIdAndId(Long userId, Long assetId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Asset> getUsersAssets(Long userId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Asset updateAsset(Long assetId, double quantity) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Asset findAssetByUserIdAndCoinId(Long userId, String coinId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void deleteAsset(Long assetId) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

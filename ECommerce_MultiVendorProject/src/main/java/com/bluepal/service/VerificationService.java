@@ -1,0 +1,8 @@
+package com.bluepal.service;
+
+import com.bluepal.model.VerificationCode;
+
+public interface VerificationService {
+
+    VerificationCode createVerificationCode(String otp, String email);
+}

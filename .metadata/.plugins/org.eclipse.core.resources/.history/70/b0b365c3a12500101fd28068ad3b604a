@@ -1,0 +1,6 @@
+package com.nt.controller;
+
+@RestController
+public class GreatRestController {
+
+}

@@ -1,0 +1,10 @@
+package com.nt.controller;
+
+@RestController
+public class GreatRestController {
+	
+	public String grearController() {
+		return "welcome to rakesh It Hub";
+	}
+
+}

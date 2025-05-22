@@ -1,0 +1,34 @@
+package com.nt.service;
+
+import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.log;
+
+import org.springframework.stereotype.Service;
+
+import com.nt.model.Product;
+import com.nt.repository.ProductRepository;
+import com.nt.request.ProductRequest;
+
+import lombok.AllArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
+
+@Service
+@AllArgsConstructor
+@Slf4j 
+public class ProductService {
+	
+	private final ProductRepository productRepository;
+	
+	public void createProduct(ProductRequest productRequest) {
+		
+		Product product = Product.builder()
+                .name(productRequest.getName())
+                .price(productRequest.getPrice())
+                .description(productRequest.getDescription())
+                // .otherField(productRequest.getOtherField())
+                .build();
+
+        productRepository.save(product);
+        log.info("product {} is saved",product.getId());
+		
+	}
+}

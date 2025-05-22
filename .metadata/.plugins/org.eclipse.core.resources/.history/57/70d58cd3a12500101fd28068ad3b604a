@@ -1,0 +1,13 @@
+package com.nt.controller;
+
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class GreatRestController {
+	
+	@GetMapping("/great")
+	public String grearController() {
+		return "welcome to rakesh It Hub";
+	}
+
+}

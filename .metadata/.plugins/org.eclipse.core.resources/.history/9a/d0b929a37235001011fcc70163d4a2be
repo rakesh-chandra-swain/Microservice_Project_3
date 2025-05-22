@@ -1,0 +1,19 @@
+package com.nt.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.nt.service.OrderService;
+import com.nt.service.UserService;
+
+@RestController
+@RequestMapping("/api/orders")
+public class OrderController {
+	
+	@Autowired
+	private OrderService orderService;
+	@Autowired
+	private UserService userService;
+
+}

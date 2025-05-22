@@ -1,0 +1,29 @@
+package com.nt.service;
+
+import org.springframework.stereotype.Service;
+
+import com.nt.model.Product;
+import com.nt.repository.ProductRepository;
+import com.nt.request.ProductRequest;
+
+import lombok.AllArgsConstructor;
+
+@Service
+@AllArgsConstructor
+public class ProductService {
+	
+	private final ProductRepository productRepository;
+	
+	public void createProduct(ProductRequest productRequest) {
+		
+		Product product = Product.builder()
+                .name(productRequest.getName())
+                .price(productRequest.getPrice())
+                .description(productRequest.getDescription())
+                // .otherField(productRequest.getOtherField()) // add as needed
+                .build();
+
+        productRepository.save(product);
+		
+	}
+}

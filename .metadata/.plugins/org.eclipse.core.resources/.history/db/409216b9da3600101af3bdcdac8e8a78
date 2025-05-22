@@ -1,0 +1,3 @@
+spring.application.name=Product_Service_Using_Microservice_1
+
+spring.data.mongodb.uri=mongodb://myuser:mypassword@localhost:27017/mydatabase

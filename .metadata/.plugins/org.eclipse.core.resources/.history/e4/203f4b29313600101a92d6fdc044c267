@@ -1,0 +1,12 @@
+package com.nt.model;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.Table;
+import lombok.Data;
+
+@Entity
+@Table(name = "order_details")
+@Data
+public class Withdrawal {
+
+}

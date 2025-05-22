@@ -1,0 +1,5 @@
+package com.nt.respository;
+
+public Interface AssetRepository extends JpaRepository<Asset, Long> {
+
+}

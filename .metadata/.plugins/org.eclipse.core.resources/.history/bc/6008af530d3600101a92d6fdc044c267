@@ -1,0 +1,9 @@
+package com.nt.respository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.nt.model.Asset;
+
+public Interfece AssetRepository implements JpaRepository<Asset, Long> {
+
+}

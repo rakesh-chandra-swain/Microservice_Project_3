@@ -1,0 +1,63 @@
+package com.nt.service;
+
+import java.math.BigDecimal;
+import java.time.LocalDateTime;
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.nt.domain.OrderStatus;
+import com.nt.domain.OrderType;
+import com.nt.model.Coin;
+import com.nt.model.Order;
+import com.nt.model.OrderItem;
+import com.nt.model.User;
+import com.nt.respository.OrderRepository;
+
+
+@Service
+public class OrderServiceImpl implements OrderService {
+	
+	
+	@Autowired
+	private OrderRepository orderRepository;
+	@Autowired
+	private WalletService walletService;
+
+	@Override
+	public Order createOrder(User user, OrderItem orderItem, OrderType orderType) {
+		double price=orderItem.getCoin().getCurrentPrice()*orderItem.getQuantity();
+		
+		Order order=new Order();
+		order.setUser(user);
+		order.setOrderItem(orderItem);
+		order.setOrderType(orderType);
+		order.setPrice(BigDecimal.valueOf(price));
+		order.setTimestamp(LocalDateTime.now());
+		order.setStatus(OrderStatus.PENDING);
+		return orderRepository.save(order);
+	}
+
+	@Override
+	public Order getOrderById(Long orderId) throws Exception {
+		
+		return orderRepository.findById(orderId).orElseThrow(()->new Exception("order not found"));
+	}
+
+	@Override
+	public List<Order> getAllOrderOfUser(Long orderId, OrderType orderType, String assetSymbol) {
+		
+		return orderRepository.findByUserId(orderId);
+	}
+	private OrderItem createOrderItem() {
+		
+	}
+
+	@Override
+	public Order processOrder(Coin coin, double quantity, OrderType orderType, User user) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

@@ -1,0 +1,5 @@
+package com.nt.request;
+
+public class ProductRequest {
+
+}

@@ -1,0 +1,52 @@
+package com.nt.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.nt.domain.OrderType;
+import com.nt.model.Coin;
+import com.nt.model.Order;
+import com.nt.model.OrderItem;
+import com.nt.model.User;
+import com.nt.respository.OrderRepository;
+
+
+@Service
+public class OrderServiceImpl implements OrderService {
+	
+	
+	@Autowired
+	private OrderRepository orderRepository;
+	@Autowired
+	private WalletService walletService;
+
+	@Override
+	public Order createOrder(User user, OrderItem orderItem, OrderType orderType) {
+		double price=orderItem.getCoin().getCurrentPrice()*orderItem.getQuantity();
+		
+		Order order=new Order();
+		order.setUser(user);
+		return null;
+	}
+
+	@Override
+	public Order getOrderById(Long orderId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Order> getAllOrderOfUser(Long orderId, OrderType orderType, String assetSymbol) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Order processOrder(Coin coin, double quantity, OrderType orderType, User user) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

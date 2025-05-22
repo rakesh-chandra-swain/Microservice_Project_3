@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="com.bluepal.domain.PaymentMethod"/>
+    <fullyQualifiedTypeName name="com.bluepal.model.Review"/>
+    <fullyQualifiedTypeName name="com.bluepal.service.ReviewService"/>
+    <fullyQualifiedTypeName name="com.bluepal.service.OrderService"/>
+    <fullyQualifiedTypeName name="com.bluepal.service.TransactionService"/>
+    <fullyQualifiedTypeName name="com.bluepal.model.Transaction"/>
+    <fullyQualifiedTypeName name="com.bluepal.service.ProductService"/>
+    <fullyQualifiedTypeName name="com.bluepal.model.Order"/>
+    <fullyQualifiedTypeName name="com.bluepal.model.User"/>
+    <fullyQualifiedTypeName name="com.bluepal.model.Product"/>
+    <fullyQualifiedTypeName name="com.bluepal.model.Cart"/>
+    <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+    <fullyQualifiedTypeName name="org.springframework.security.core.userdetails.UserDetails"/>
+    <fullyQualifiedTypeName name="java.util.stream.Collectors"/>
+    <fullyQualifiedTypeName name="com.nt.model.UserDto"/>
+    <fullyQualifiedTypeName name="com.nt.domain.USER_ROLE"/>
+    <fullyQualifiedTypeName name="com.nt.utils.OtpUtils"/>
+    <fullyQualifiedTypeName name="java.util.UUID"/>
+    <fullyQualifiedTypeName name="com.nt.domain.VerificationType"/>
+    <fullyQualifiedTypeName name="com.nt.response.AuthResponse"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.Table"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.Id"/>
+    <fullyQualifiedTypeName name="java.sql.Date"/>
+    <fullyQualifiedTypeName name="java.net.http.HttpHeaders"/>
+    <fullyQualifiedTypeName name="org.springframework.http.ResponseEntity"/>
+    <fullyQualifiedTypeName name="aj.org.objectweb.asm.TypeReference"/>
+    <fullyQualifiedTypeName name="lombok.Data"/>
+    <fullyQualifiedTypeName name="java.util.Optional"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.CascadeType"/>
+    <fullyQualifiedTypeName name="com.nt.domain.OrderType"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.criteria.Order"/>
+    <fullyQualifiedTypeName name="java.math.BigDecimal"/>
+    <fullyQualifiedTypeName name="java.time.LocalDateTime"/>
+    <fullyQualifiedTypeName name="com.nt.domain.OrderStatus"/>
+    <fullyQualifiedTypeName name="org.springframework.transaction.annotation.Transactional"/>
+    <fullyQualifiedTypeName name="com.nt.model.Order"/>
+    <fullyQualifiedTypeName name="com.nt.model.User"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="org.springframework.http.HttpStatus"/>
+</qualifiedTypeNameHistroy>
